@@ -1,0 +1,99 @@
+.cf {
+    background: #272b2c;
+}
+
+#nav ul {
+    background: #ddd;
+    list-style: none;
+    text-align: left;
+    width: 100%;
+}
+
+#nav li {
+    background: #272b2c;
+    
+    display: inline-block;
+    
+    margin: 0 -5px -1px 0;
+    padding: 0 0;
+    position: relative;
+    min-width: 250px;
+    z-index: 20;
+}
+
+#nav .dropdown:after {
+    content: ' \25bc';
+}
+#nav .rightdown:after {
+    content: ' »';
+}
+ 
+#nav a {
+    background: #272b2c;
+    color: #FFF;
+    display: block;
+    font: bold 12px/50px sans-serif;
+    padding: 0 25px;
+    text-align: left;
+    text-decoration: none;
+    -webkit-transition: all .25s ease;
+       -moz-transition: all .25s ease;
+        -ms-transition: all .25s ease;
+         -o-transition: all .25s ease;
+            transition: all .25s ease;
+}
+ 
+#nav li ul li {
+    width: 100%;
+}
+
+#nav li a {
+    border: 1px solid #555;
+    padding: 0 25px;
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: #ffffff;
+    font: bold 12px/40px sans-serif;
+}
+
+#nav li li a {
+    font-size: 80%;
+}
+
+#nav li:hover a{
+    background: #222;
+}
+
+#nav li a:hover{
+    background: #555;
+}
+
+#nav li li a:hover{
+    background: #555;
+}
+
+#nav li li li a:hover{
+    background: #555;
+}
+
+#nav ul {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    display: none;
+}
+
+#nav li:hover ul ul {
+    display: none;
+}
+
+#nav li:hover ul {
+    display: block;
+}
+
+#nav li li:hover ul {
+    display: block;
+    margin-left: 99%;
+    margin-top: -42px;
+}
